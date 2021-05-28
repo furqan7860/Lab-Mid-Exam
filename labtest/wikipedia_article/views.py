@@ -12,7 +12,7 @@ def getPage():
         print(wikiload.summary)
         wikiopen = input("\nDo you want to Open Wikipedia page in browser? (Y/N)").lower().strip()
         if(wikiopen == "yes" or wikiopen == "y"):
-            webbrowser.open(wikiload.url,new=2)
+            webbrowser.open(wikiload.url)
         again = input("Do you Want to View Another Article (Y/N)??").lower()
         if (again == "y" or again == "yes"):
             getPage()
@@ -37,7 +37,7 @@ def getPage():
             print(wikiload.summary)
             wikiopen = input("\nDo you want to Open Wikipedia page in browser? (Y/N)").lower().strip()
             if(wikiopen == "yes" or wikiopen == "y"):
-                webbrowser.open(wikiload.url,new=2)
+                webbrowser.open(wikiload.url)
             again = input("Do you Want to View Another Article??(Y/N)").lower()
             if (again == "y" or again == "yes"):
                 getPage()
