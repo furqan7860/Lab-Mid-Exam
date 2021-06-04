@@ -1,0 +1,21 @@
+<html>
+   <head>  
+   </head>
+   <body>
+      Welcome to Random Wikipedia Article App!<p>"Would you like to read about {{wikipage}}?? (Y/N/Q)"</p>
+      <form action="" method="post">
+        {% csrf_token %}
+        <button onclick="yes()">Yes</button>
+        <button onclick="myFunction()">No</button>
+        <button onclick="quit()">Quit</button>
+        <h1 id="demo"></h1>
+      <script>
+         function quit() {
+           document.getElementById("demo").innerHTML = "Thank You for using this app";
+         }
+         </script> 
+        
+    </form>
+   </body>
+   
+</html>
